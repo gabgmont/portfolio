@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../ui_kit/ds_colors.dart';
-import '../../../ui_kit/ds_images.dart';
-import '../../../ui_kit/ds_styles.dart';
+import '../../../uikit/ds_colors.dart';
+import '../../../uikit/ds_images.dart';
+import '../../../uikit/ds_styles.dart';
 
 class StacksCarousel extends StatelessWidget {
   const StacksCarousel({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class StacksCarousel extends StatelessWidget {
         Row(
           children: [
             Container(
-              height: 3,
+              height: 2,
               width: 58,
               decoration: BoxDecoration(
                   color: DSColors.primaryText,

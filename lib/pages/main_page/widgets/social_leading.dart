@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../ui_kit/ds_colors.dart';
-import '../../../ui_kit/ds_images.dart';
-import '../../../ui_kit/ds_styles.dart';
+import '../../../uikit/ds_colors.dart';
+import '../../../uikit/ds_images.dart';
+import '../../../uikit/ds_styles.dart';
 
 class SocialLeading extends StatelessWidget {
   const SocialLeading({Key? key}) : super(key: key);

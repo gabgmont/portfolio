@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/pages/main_page/widgets/text_item.dart';
-import 'package:portfolio/ui_kit/ds_colors.dart';
+import 'package:portfolio/uikit/ds_colors.dart';
 
 import 'widgets/social_leading.dart';
 import 'widgets/stacks_carousel.dart';
@@ -27,7 +27,7 @@ class MainPage extends StatelessWidget {
                 children: [
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: const [
                       SocialLeading(),
                       SizedBox(
                         width: 182,
@@ -36,8 +36,9 @@ class MainPage extends StatelessWidget {
                         padding: EdgeInsets.only(top: 80),
                         child: TextItem(
                           label: 'Intro',
-                          body:
-                              'Mobile and Backend developer from Brazil.\nCurrently working with Flutter, \nKotlin and Spring.',
+                          body: 'Mobile and Backend developer from Brazil.\n'
+                              'Currently working with Flutter, '
+                              '\nKotlin and Spring.',
                         ),
                       ),
                     ],

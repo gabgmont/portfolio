@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../ui_kit/ds_colors.dart';
-import '../../../ui_kit/ds_styles.dart';
+import '../../../uikit/ds_colors.dart';
+import '../../../uikit/ds_styles.dart';
 
 class TextItem extends StatelessWidget {
   final String label;
@@ -18,7 +18,7 @@ class TextItem extends StatelessWidget {
           Row(
             children: [
               Container(
-                height: 3,
+                height: 2,
                 width: 58,
                 decoration: BoxDecoration(
                     color: DSColors.primaryText,
@@ -33,9 +33,12 @@ class TextItem extends StatelessWidget {
               )
             ],
           ),
-          Text(
-            body,
-            style: DSStyles.textBodyStyle,
+          Padding(
+            padding: const EdgeInsets.only(left: 16),
+            child: Text(
+              body,
+              style: DSStyles.textBodyStyle,
+            ),
           )
         ],
       ),

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/ui_kit/ds_colors.dart';
+import 'package:portfolio/uikit/ds_colors.dart';
 
 class DSStyles {
   static final titleStyle = GoogleFonts.lexend(
