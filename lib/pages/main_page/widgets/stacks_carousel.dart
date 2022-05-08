@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:portfolio/pages/main_page/widgets/animated_stack.dart';
 
 import '../../../uikit/ds_colors.dart';
 import '../../../uikit/ds_images.dart';
@@ -41,11 +42,11 @@ class StacksCarousel extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SvgPicture.asset(DSImages.kotlinSvg),
-                SvgPicture.asset(DSImages.springSvg),
-                SvgPicture.asset(DSImages.javaSvg),
-                SvgPicture.asset(DSImages.flutterSvg),
-                SvgPicture.asset(DSImages.dartSvg),
+                AnimatedHover(child: SvgPicture.asset(DSImages.kotlinSvg)),
+                AnimatedHover(child: SvgPicture.asset(DSImages.springSvg)),
+                AnimatedHover(child: SvgPicture.asset(DSImages.javaSvg)),
+                AnimatedHover(child: SvgPicture.asset(DSImages.flutterSvg)),
+                AnimatedHover(child: SvgPicture.asset(DSImages.dartSvg)),
               ],
             ),
           ),
